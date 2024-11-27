@@ -16,3 +16,17 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+let arrowLeft=document.getElementById("left")
+arrowLeft.addEventListener("click", function(event) {
+	maFleche = event.target
+	console.log(`J'ai cliqué sur ma flèche : ${maFleche.id}`)
+})
+
+let arrowRight=document.getElementById("right")
+arrowRight.addEventListener("click", function(event) {
+	maFleche = event.target
+	console.log(`J'ai cliqué sur ma flèche : ${maFleche.id}`)
+})
+
+/***Si jamais besoin : je peux remplacer le contenu de console log par arrowRight ou arrowLeft en fonction de la flèche nécessaire***/
